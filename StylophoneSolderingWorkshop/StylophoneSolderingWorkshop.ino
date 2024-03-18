@@ -12,7 +12,7 @@ unsigned short int volt_scale[] = {0, 507, 680, 766, CUTOFFVOLT};
 int inputs[] = {PC0, PC1, PC2, PC3};
 //This is a counter. If it counts up to 8, then we have not pressed anything in the last 8 checks. Turn the buzzer off.
 int playing = 0;
-int frequency = 0;
+unsigned int frequency = 0;
 
 void setup() {
   //Set up the serial connection
